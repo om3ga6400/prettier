@@ -15,11 +15,11 @@ jobs:
           curl -O https://raw.githubusercontent.com/om3ga6400/prettier/main/.prettierrc
           curl -O https://raw.githubusercontent.com/om3ga6400/prettier/main/.prettierignore
           curl -O https://raw.githubusercontent.com/om3ga6400/prettier/main/.gitignore
-          curl -o .github/workflows/prettier.yml https://raw.githubusercontent.com/om3ga6400/prettier/main/.github/workflows/prettier.yml
           npx prettier@latest --write .
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
           git diff --quiet && git diff --staged --quiet || git commit -m "chore: format with prettier"
           git push
+
 ```
