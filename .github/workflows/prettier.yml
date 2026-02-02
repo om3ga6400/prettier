@@ -7,8 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-        with:
-          token: ${{ secrets.PAT_TOKEN }}
 
       - run: |
           curl -O https://raw.githubusercontent.com/om3ga6400/prettier/main/.prettierrc
