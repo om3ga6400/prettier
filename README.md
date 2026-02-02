@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      
+
       - run: |
           curl -O https://raw.githubusercontent.com/om3ga6400/prettier/main/.prettierrc
           curl -O https://raw.githubusercontent.com/om3ga6400/prettier/main/.prettierignore
