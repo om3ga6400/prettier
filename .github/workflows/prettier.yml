@@ -2,6 +2,9 @@ name: Prettier
 
 on: [push, workflow_dispatch]
 
+permissions:
+  contents: write
+
 jobs:
   format:
     runs-on: ubuntu-latest
